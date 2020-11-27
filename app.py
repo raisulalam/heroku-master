@@ -284,7 +284,7 @@ def new_cust_feature(param):
 
 @app.route('/')
 def hello_world():
-    return 'To check the loyalty score please visit the index page'
+    return 'To check the loyalty score please visit the index page https://loyaltyscore.herokuapp.com/index'
 
 @app.route('/index')
 def index():
