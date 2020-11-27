@@ -20,9 +20,7 @@ cryptography==2.8
 
 cycler==0.10.0
 
-dbus-python==1.2.16
 
-dbus == 1.9
 distro==1.4.0
 
 entrypoints==0.3
