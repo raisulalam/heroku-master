@@ -22,7 +22,7 @@ cycler==0.10.0
 
 dbus-python==1.2.16
 
-dbus-1 == 1.8
+dbus == 1.9
 distro==1.4.0
 
 entrypoints==0.3
