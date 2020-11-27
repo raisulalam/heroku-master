@@ -127,8 +127,6 @@ simplejson==3.16.0
 
 six==1.14.0
 
-sos==4.0
-
 ssh-import-id==5.10
 
 systemd-python==234
