@@ -8,11 +8,11 @@
 
   <form action="/predict" method="POST">
     <label for="first_active_month">first_active_month</label>
-	<input type="date" name="first_active_month"/>
+	<input type="date" max="2020-11-29" name="first_active_month" required/>
       <!--<textarea name="first_active_month" rows="1" cols="20"></textarea>>-->
 	 <br></br>
 	<label for="card_id">card_id</label>
-		<textarea name="card_id" maxlength="15" minlength="10" rows="1" cols="20"></textarea>>
+		<textarea name="card_id" maxlength="15" minlength="10" rows="1" cols="20" required></textarea>>
 		<br></br>
 	<label for="feature_1">feature_1</label>
 		
@@ -49,7 +49,7 @@
 		<!--<textarea name="hist_authorized_flag" rows="1" cols="20"></textarea>>-->
 		<br></br>
 	<label for="hist_city_id">hist_city_id</label>
-	<input type="number" min=-1 max= 347  name="hist_city_id"/>
+	<input type="number" min=-1 max= 347  name="hist_city_id" required/>
 		<!--<textarea name="hist_city_id" rows="1" cols="20"></textarea>>-->
 		<br></br>
 	<label for="hist_category_1">hist_category_1</label>
@@ -60,7 +60,7 @@
 		<!--<textarea name="hist_category_1" rows="1" cols="20"></textarea>>-->
 		<br></br>
 	<label for="hist_installments">hist_installments</label>
-		<input type="number" min=0 max= 12  name="hist_installments"/>
+		<input type="number" min=0 max= 12  name="hist_installments" required/>
 		<!--<textarea name="hist_installments" rows="1" cols="20"></textarea>>-->
 		<br></br>
 	<label for="hist_category_3">hist_category_3</label>
@@ -72,22 +72,22 @@
 		<!--<textarea name="hist_category_3" rows="1" cols="20"></textarea>>-->
 		<br></br>
 	<label for="hist_merchant_category_id">hist_merchant_category_id</label>
-		<input type="number" min=-1 max= 891 maxlength="3"  name="hist_merchant_category_id"/>
+		<input type="number" min=-1 max= 891 maxlength="3"  name="hist_merchant_category_id" required/>
 		<!--<textarea name="hist_merchant_category_id" rows="1" cols="20"></textarea>>-->
 		<br></br>
 	<label for="hist_merchant_id">hist_merchant_id</label>
-		<textarea name="hist_merchant_id" minlength="10" maxlength="15" rows="1" cols="20"></textarea>>
+		<textarea name="hist_merchant_id" minlength="10" maxlength="15" rows="1" cols="20" required></textarea>>
 		<br></br>
 	<label for="hist_month_lag">hist_month_lag</label>
-		<input type="number" min=-13 max= 2 maxlength="3"  name="hist_month_lag"/>
+		<input type="number" min=-13 max= 2 maxlength="3"  name="hist_month_lag" required/>
 		<!--<textarea name="hist_month_lag" rows="1" cols="20"></textarea>>-->
 		<br></br>
 	<label for="hist_purchase_amount">hist_purchase_amount</label>
-		<input type="number" step="0.00000000001"   name="hist_purchase_amount"/>
+		<input type="number" step="0.00000000001"   name="hist_purchase_amount" required/>
 		<!--<textarea name="hist_purchase_amount" rows="1" cols="20"></textarea>>-->
 		<br></br>
 	<label for="hist_purchase_date">hist_purchase_date</label>
-		<input type="datetime-local" name="hist_purchase_date"/>
+		<input type="datetime-local" name="hist_purchase_date" required/>
 		<!--<textarea name="hist_purchase_date" rows="1" cols="20"></textarea>>-->
 		<br></br>
 	<label for="hist_category_2">hist_category_2</label>
@@ -101,11 +101,11 @@
 		<!--<textarea name="hist_category_2" rows="1" cols="20"></textarea>>-->
 		<br></br>
 	<label for="hist_state_id">hist_state_id</label>
-		<input type="number" min=-1 max= 24 maxlength="3"  name="hist_state_id"/>
+		<input type="number" min=-1 max= 24 maxlength="3"  name="hist_state_id" required/>
 		<!--<textarea name="hist_state_id" rows="1" cols="20"></textarea>>-->
 		<br></br>
 	<label for="hist_subsector_id">hist_subsector_id</label>
-		<input type="number" min=-1 max= 41 maxlength="3"  name="hist_subsector_id"/>
+		<input type="number" min=-1 max= 41 maxlength="3"  name="hist_subsector_id" required/>
 		<!--<textarea name="hist_subsector_id" rows="1" cols="20"></textarea>>-->
 		<br></br>
 	<label for="new_authorized_flag">new_authorized_flag</label>
@@ -116,7 +116,7 @@
 		<!--<textarea name="new_authorized_flag" rows="1" cols="20"></textarea>>-->
 		<br></br>
 	<label for="new_city_id">new_city_id</label>
-		<input type="number" min=-1 max= 347  name="new_city_id"/>
+		<input type="number" min=-1 max= 347  name="new_city_id" required/>
 		<!--<textarea name="new_city_id" rows="1" cols="20"></textarea>>-->
 		<br></br>
 	<label for="new_category_1">new_category_1</label>
@@ -127,7 +127,7 @@
 		<!--<textarea name="new_category_1" rows="1" cols="20"></textarea>>-->
 		<br></br>
 	<label for="new_installments">new_installments</label>
-		<input type="number" min=0 max= 12  name="new_installments"/>
+		<input type="number" min=0 max= 12  name="new_installments" required/>
 		<!--<textarea name="new_installments" rows="1" cols="20"></textarea>>-->
 		<br></br>
 	<label for="new_category_3">new_category_3</label>
@@ -139,23 +139,23 @@
 		<!--<textarea name="new_category_3" rows="1" cols="20"></textarea>>-->
 		<br></br>
 	<label for="new_merchant_category_id">new_merchant_category_id</label>
-		<input type="number" min=-1 max= 891 maxlength="3"  name="new_merchant_category_id"/>
+		<input type="number" min=-1 max= 891 maxlength="3"  name="new_merchant_category_id" required/>
 		<!--<textarea name="new_merchant_category_id" rows="1" cols="20"></textarea>> -->
 		<br></br>
 	<label for="new_merchant_id">new_merchant_id</label>
-		<textarea name="new_merchant_id" minlength="10" maxlength="15" rows="1" cols="20"></textarea>>
+		<textarea name="new_merchant_id" minlength="10" maxlength="15" rows="1" cols="20" required></textarea>>
 		<!--<textarea name="new_merchant_id" rows="1" cols="20"></textarea>>-->
 		<br></br>
 	<label for="new_month_lag">new_month_lag</label>
-		<input type="number" min=-13 max= 2 maxlength="3"  name="new_month_lag"/>
+		<input type="number" min=-13 max= 2 maxlength="3"  name="new_month_lag" required/>
 		<!--<textarea name="new_month_lag" rows="1" cols="20"></textarea>>-->
 		<br></br>
 	<label for="new_purchase_amount">new_purchase_amount</label>
-		<input type="number" step="0.00000000001"   name="new_purchase_amount"/>
+		<input type="number" step="0.00000000001" name="new_purchase_amount" required/>
 		<!--<textarea name="new_purchase_amount" rows="1" cols="20"></textarea>> -->
 		<br></br>
 	<label for="new_purchase_date">new_purchase_date</label>
-		<input type="datetime-local" name="new_purchase_date"/>
+		<input type="datetime-local" name="new_purchase_date" required/>
 		<!--<textarea name="new_purchase_date" rows="1" cols="20"></textarea>>-->
 		<br></br>
 	<label for="new_category_2">new_category_2</label>
@@ -169,11 +169,11 @@
 		<!--<textarea name="new_category_2" rows="1" cols="20"></textarea>>-->
 		<br></br>
 	<label for="new_state_id">new_state_id</label>
-		<input type="number" min=-1 max= 24 maxlength="3"  name="new_state_id"/>
+		<input type="number" min=-1 max= 24 maxlength="3"  name="new_state_id" required/>
 		<!--<textarea name="new_state_id" rows="1" cols="20"></textarea>>-->
 		<br></br>
 	<label for="new_subsector_id">new_subsector_id</label>
-		<input type="number" min=-1 max= 41 maxlength="3"  name="new_subsector_id"/>
+		<input type="number" min=-1 max= 41 maxlength="3"  name="new_subsector_id" required/>
 		<!--<textarea name="new_subsector_id" rows="1" cols="20"></textarea>>-->
 		<br></br>
 
