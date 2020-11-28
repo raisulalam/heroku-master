@@ -12,7 +12,7 @@
       <!--<textarea name="first_active_month" rows="1" cols="20"></textarea>>-->
 	 <br></br>
 	<label for="card_id">card_id</label>
-		<textarea name="card_id" rows="1" cols="20"></textarea>>
+		<textarea name="card_id" maxlength="15" minlength="10" rows="1" cols="20"></textarea>>
 		<br></br>
 	<label for="feature_1">feature_1</label>
 		
@@ -49,7 +49,8 @@
 		<!--<textarea name="hist_authorized_flag" rows="1" cols="20"></textarea>>-->
 		<br></br>
 	<label for="hist_city_id">hist_city_id</label>
-		<textarea name="hist_city_id" rows="1" cols="20"></textarea>>
+	<input type="number" min=-1 max= 347  name="hist_city_id"/>
+		<!--<textarea name="hist_city_id" rows="1" cols="20"></textarea>>-->
 		<br></br>
 	<label for="hist_category_1">hist_category_1</label>
 		<select name="hist_category_1" id="hist_category_1">
@@ -59,7 +60,8 @@
 		<!--<textarea name="hist_category_1" rows="1" cols="20"></textarea>>-->
 		<br></br>
 	<label for="hist_installments">hist_installments</label>
-		<textarea name="hist_installments" rows="1" cols="20"></textarea>>
+		<input type="number" min=0 max= 12  name="hist_installments"/>
+		<!--<textarea name="hist_installments" rows="1" cols="20"></textarea>>-->
 		<br></br>
 	<label for="hist_category_3">hist_category_3</label>
 		<select name="hist_category_3" id="hist_category_3">
@@ -70,16 +72,19 @@
 		<!--<textarea name="hist_category_3" rows="1" cols="20"></textarea>>-->
 		<br></br>
 	<label for="hist_merchant_category_id">hist_merchant_category_id</label>
-		<textarea name="hist_merchant_category_id" rows="1" cols="20"></textarea>>
+		<input type="number" min=-1 max= 891 maxlength="3"  name="hist_merchant_category_id"/>
+		<!--<textarea name="hist_merchant_category_id" rows="1" cols="20"></textarea>>-->
 		<br></br>
 	<label for="hist_merchant_id">hist_merchant_id</label>
-		<textarea name="hist_merchant_id" rows="1" cols="20"></textarea>>
+		<textarea name="hist_merchant_id" minlength="10" maxlength="15" rows="1" cols="20"></textarea>>
 		<br></br>
 	<label for="hist_month_lag">hist_month_lag</label>
-		<textarea name="hist_month_lag" rows="1" cols="20"></textarea>>
+		<input type="number" min=-13 max= 2 maxlength="3"  name="hist_month_lag"/>
+		<!--<textarea name="hist_month_lag" rows="1" cols="20"></textarea>>-->
 		<br></br>
 	<label for="hist_purchase_amount">hist_purchase_amount</label>
-		<textarea name="hist_purchase_amount" rows="1" cols="20"></textarea>>
+		<input type="number" step="0.00000000001"   name="hist_purchase_amount"/>
+		<!--<textarea name="hist_purchase_amount" rows="1" cols="20"></textarea>>-->
 		<br></br>
 	<label for="hist_purchase_date">hist_purchase_date</label>
 		<input type="datetime-local" name="hist_purchase_date"/>
@@ -96,10 +101,12 @@
 		<!--<textarea name="hist_category_2" rows="1" cols="20"></textarea>>-->
 		<br></br>
 	<label for="hist_state_id">hist_state_id</label>
-		<textarea name="hist_state_id" rows="1" cols="20"></textarea>>
+		<input type="number" min=-1 max= 24 maxlength="3"  name="hist_state_id"/>
+		<!--<textarea name="hist_state_id" rows="1" cols="20"></textarea>>-->
 		<br></br>
 	<label for="hist_subsector_id">hist_subsector_id</label>
-		<textarea name="hist_subsector_id" rows="1" cols="20"></textarea>>
+		<input type="number" min=-1 max= 41 maxlength="3"  name="hist_subsector_id"/>
+		<!--<textarea name="hist_subsector_id" rows="1" cols="20"></textarea>>-->
 		<br></br>
 	<label for="new_authorized_flag">new_authorized_flag</label>
 		<select name="new_authorized_flag" id="new_authorized_flag">
@@ -109,7 +116,8 @@
 		<!--<textarea name="new_authorized_flag" rows="1" cols="20"></textarea>>-->
 		<br></br>
 	<label for="new_city_id">new_city_id</label>
-		<textarea name="new_city_id" rows="1" cols="20"></textarea>>
+		<input type="number" min=-1 max= 347  name="new_city_id"/>
+		<!--<textarea name="new_city_id" rows="1" cols="20"></textarea>>-->
 		<br></br>
 	<label for="new_category_1">new_category_1</label>
 		<select name="new_category_1" id="new_category_1">
@@ -119,7 +127,8 @@
 		<!--<textarea name="new_category_1" rows="1" cols="20"></textarea>>-->
 		<br></br>
 	<label for="new_installments">new_installments</label>
-		<textarea name="new_installments" rows="1" cols="20"></textarea>>
+		<input type="number" min=0 max= 12  name="new_installments"/>
+		<!--<textarea name="new_installments" rows="1" cols="20"></textarea>>-->
 		<br></br>
 	<label for="new_category_3">new_category_3</label>
 		<select name="new_category_3" id="new_category_3">
@@ -130,16 +139,20 @@
 		<!--<textarea name="new_category_3" rows="1" cols="20"></textarea>>-->
 		<br></br>
 	<label for="new_merchant_category_id">new_merchant_category_id</label>
-		<textarea name="new_merchant_category_id" rows="1" cols="20"></textarea>>
+		<input type="number" min=-1 max= 891 maxlength="3"  name="new_merchant_category_id"/>
+		<!--<textarea name="new_merchant_category_id" rows="1" cols="20"></textarea>> -->
 		<br></br>
 	<label for="new_merchant_id">new_merchant_id</label>
-		<textarea name="new_merchant_id" rows="1" cols="20"></textarea>>
+		<textarea name="new_merchant_id" minlength="10" maxlength="15" rows="1" cols="20"></textarea>>
+		<!--<textarea name="new_merchant_id" rows="1" cols="20"></textarea>>-->
 		<br></br>
 	<label for="new_month_lag">new_month_lag</label>
-		<textarea name="new_month_lag" rows="1" cols="20"></textarea>>
+		<input type="number" min=-13 max= 2 maxlength="3"  name="new_month_lag"/>
+		<!--<textarea name="new_month_lag" rows="1" cols="20"></textarea>>-->
 		<br></br>
 	<label for="new_purchase_amount">new_purchase_amount</label>
-		<textarea name="new_purchase_amount" rows="1" cols="20"></textarea>>
+		<input type="number" step="0.00000000001"   name="new_purchase_amount"/>
+		<!--<textarea name="new_purchase_amount" rows="1" cols="20"></textarea>> -->
 		<br></br>
 	<label for="new_purchase_date">new_purchase_date</label>
 		<input type="datetime-local" name="new_purchase_date"/>
@@ -156,10 +169,12 @@
 		<!--<textarea name="new_category_2" rows="1" cols="20"></textarea>>-->
 		<br></br>
 	<label for="new_state_id">new_state_id</label>
-		<textarea name="new_state_id" rows="1" cols="20"></textarea>>
+		<input type="number" min=-1 max= 24 maxlength="3"  name="new_state_id"/>
+		<!--<textarea name="new_state_id" rows="1" cols="20"></textarea>>-->
 		<br></br>
 	<label for="new_subsector_id">new_subsector_id</label>
-		<textarea name="new_subsector_id" rows="1" cols="20"></textarea>>
+		<input type="number" min=-1 max= 41 maxlength="3"  name="new_subsector_id"/>
+		<!--<textarea name="new_subsector_id" rows="1" cols="20"></textarea>>-->
 		<br></br>
 
     <br></br>
