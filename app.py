@@ -397,9 +397,24 @@ def predict():
         'new_state_id':int(new_state_id),
         'new_subsector_id':int(new_subsector_id)
 	}
+	today=datetime.date.today()
+	his_date=param['hist_purchase_date'].split("T")
+	new_date=param['new_purchase_date'].split("T")
+	his_date=his_date[0]
+	new_date=new_date[0]
+	#his_date=len(his_date)
+	#a=type(param['hist_purchase_date'])
+	#his_date = param['hist_purchase_date'].strftime("%m/%d/%Y
+	his_date=datetime.datetime.strptime(his_date, "%Y-%m-%d").date()
+	new_date=datetime.datetime.strptime(new_date, "%Y-%m-%d").date()
+	if((today < his_date) or (today < new_date) ):
+		return jsonify({'error_message': "please enter the appropriate purchase date, purchase date should be earlier than today "})
+	
+	else:
+		
 	
 	#print('ok')
-	score=loyalty_score_prediction_new_1(param)
+		score=loyalty_score_prediction_new_1(param)
 	
     #clf = joblib.load('model.pkl')
     #count_vect = joblib.load('count_vect.pkl')
@@ -410,10 +425,10 @@ def predict():
     #    prediction = "Positive"
     #else:
     #    prediction = "Negative"
-	out_scalar = np.asscalar(score)
+		out_scalar = np.asscalar(score)
 	
-	score=5
-	return jsonify({'Loyalty Score': out_scalar})
+		score=5
+		return jsonify({'Loyalty Score': out_scalar})
 
 
 if __name__ == '__main__':
